@@ -1,0 +1,24 @@
+.qtpdfBtn {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+  transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out,
+    background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  box-shadow: 0 0.275rem 0.75rem -0.0625rem rgba(12, 12, 12, 0.1),
+    0 0.125rem 0.4rem -0.0625rem rgba(112, 12, 12, 0.03) !important;
+  color: #232323;
+  font-weight: 600;
+  text-transform: capitalize !important;
+}
+.qtpdfBtn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 0.275rem 0.75rem -0.0625rem rgba(54, 106, 219, 0.2),
+    0 0.125rem 0.4rem -0.0625rem rgba(54, 106, 219, 0.2);
+  color: #7ab700;
+}
+.pdf-icon {
+  color: red;
+  font-size: 1.4rem;
+}
