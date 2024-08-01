@@ -1,18 +1,19 @@
-// import HomeCard from "../components/HomeCard";
-// import ClientSlider from "../components/ClientSlider";
-// import ProjectsSlider from "../components/ProjectsSlider";
+import HomeCard from "../components/HomeCard";
+import ClientSlider from "../components/ClientSlider";
+import ProjectsSlider from "../components/ProjectsSlider";
 import bgImage from "../utils/images/Untitled-design-97.png";
 import teamImg from "../utils/images/stories1-768x512.jpg";
-// import Lottie from "react-lottie";
-// import animationData from "../utils/animations/animation-financial-landing.json";
+import Lottie from "react-lottie";
+import animationData from "../utils/animations/animation-financial-landing.json";
+import { HomeAnimation } from "../helpers/types";
 
 export default function Home() {
-  const defaultOptions = {
+  const defaultOptions: HomeAnimation = {
     loop: true,
     autoplay: true,
-    // animationData: animationData,
+    animationData: animationData,
     rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
+      preserveAspectRatio: "xMidYMid",
     },
   };
 
@@ -50,7 +51,7 @@ export default function Home() {
         <h1 className="text-4xl font-extrabold p-4">Our Projects</h1>
         <span className="border-b-8 border-primary w-32 mb-12"></span>
       </div>
-      {/* <ProjectsSlider /> */}
+      <ProjectsSlider />
       <div className="rounded-md border border-green-200 md:mx-52 mx-2 mb-24 shadow-md flex items-center">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 px-6 md:px-28">
           <div className="relative flex flex-col justify-center items-center md:items-start">
@@ -68,9 +69,9 @@ export default function Home() {
               Read More
             </a>
           </div>
-          {/* <div className="flex items-center">
+          <div className="flex items-center">
             <Lottie options={defaultOptions} height={400} width={400} />
-          </div> */}
+          </div>
         </div>
       </div>
       <div className="flex flex-col items-center">
@@ -79,7 +80,7 @@ export default function Home() {
         </h1>
         <span className="border-b-8 border-primary w-32 mb-10"></span>
       </div>
-      {/* <HomeCard /> */}
+      <HomeCard />
       <div className="flex justify-center my-5 md:flex-row flex-col md:ms-0 ms-4">
         <div className="flex flex-col md:w-100">
           <h4 className="font-extrabold text-2xl mb-6 mt-8">Our Team</h4>
@@ -105,7 +106,7 @@ export default function Home() {
           className="rounded-xl -ms-2"
         />
       </div>
-      {/* <ClientSlider /> */}
+      <ClientSlider />
     </>
   );
 }

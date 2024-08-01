@@ -43,6 +43,14 @@ export interface HomeDropDown {
   investors: boolean;
 }
 
+
+export interface HomeAnimation {
+  loop: boolean;
+  autoplay: boolean;
+  animationData: any;
+  rendererSettings: any
+}
+
 export interface HeaderDropdownItems {
   id: number;
   name: string;
